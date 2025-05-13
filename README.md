@@ -49,4 +49,4 @@ Here’s what your interactive bundle of joy should include:
 
 Remember – this isn't just code. It's your **first step toward creating magical user experiences**. So play around, break stuff (then fix it), and most of all, have FUN! 😄
 
-Happy Coding! 💻✨  
+Happy Coding! 💻✨

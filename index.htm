@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Playground</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>🎪 JavaScript Fun House 🎪</h1>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section id="event-section">
+            <h2>🎈 Event Handling</h2>
+            
+            <div class="event-box">
+                <button id="click-button" class="interactive-btn">Click Me!</button>
+                <p id="click-output">Waiting for your click...</p>
+            </div>
+            
+            <div class="event-box hover-box">
+                <p>Hover over me!</p>
+                <div id="hover-effect"></div>
+            </div>
+            
+            <div class="event-box">
+                <p>Type something: <span id="keypress-output">______</span></p>
+                <input type="text" id="keypress-input" placeholder="Start typing...">
+            </div>
+            
+            <div class="event-box secret-box">
+                <p>Find the secret! (Hint: try double-clicking or holding the button)</p>
+                <button id="secret-button" class="interactive-btn">?</button>
+                <p id="secret-message"></p>
+            </div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section id="interactive-section">
+            <h2>🎮 Interactive Elements</h2>
+            
+            <div class="interactive-box">
+                <button id="color-changer" class="interactive-btn">Change My Color!</button>
+            </div>
+            
+            <div class="interactive-box">
+                <h3>Image Gallery</h3>
+                <div class="gallery">
+                    <img src="images/Nature.jpeg" alt="Nature" class="gallery-img active">
+                    <img src="images/City.jpeg" alt="City" class="gallery-img">
+                    <img src="images/Animal.jpeg" alt="Animal" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button id="prev-btn" class="gallery-btn">⬅️</button>
+                    <button id="next-btn" class="gallery-btn">➡️</button>
+                </div>
+            </div>
+            
+            <div class="interactive-box">
+                <h3>Accordion</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Section 1</button>
+                        <div class="accordion-content">
+                            <p>This is the first section of content. It appears when you click the button above!</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Section 2</button>
+                        <div class="accordion-content">
+                            <p>Wow! More content here. Accordions are great for organizing information.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Section 3</button>
+                        <div class="accordion-content">
+                            <p>The final section. You're doing great with all these interactions!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section id="form-section">
+            <h2>📋 Form Validation</h2>
+            
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Name (required):</label>
+                    <input type="text" id="name" required>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (min 8 chars):</label>
+                    <input type="password" id="password">
+                    <span class="error-message"></span>
+                </div>
+                
+                <button type="submit" class="interactive-btn">Submit</button>
+            </form>
+            
+            <div id="form-success" class="hidden">
+                <h3>🎉 Form Submitted Successfully! 🎉</h3>
+                <p>Great job with all the validation!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with ❤️ and JavaScript</p>
+    </footer>
+
+    <script src="javascript/index.js"></script>
+</body>
+</html>
